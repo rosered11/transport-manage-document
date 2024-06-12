@@ -2,9 +2,8 @@
 
 ## Break Spec
 - เอา default planloadDate ออก เนื่องจากใน กรณีไม่ส่งมา แล้ว ส่งมาแต่ orderNumber อาจจะหา order ไม่เจอ
-- ใช้ validate กลางสำหรับ page กับ pageItem
+- ใช้ validate กลางสำหรับ params page, pageItem และ sortDirection
 - ตัด requestNumber ออกจาก response
-- sortDirection ใช้ validate กลาง
 
 ### Path parameter
 - planLoadDateFrom
