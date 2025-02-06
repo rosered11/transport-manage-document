@@ -1,0 +1,278 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram name="Page-1" id="SKxrxLal9h6KwIr_2VjN">
+    <mxGraphModel dx="4300" dy="1653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="W4SQOHc0aTlh--432vCz-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="was6Y7-AhTUG_-qzvy3q-1" target="W4SQOHc0aTlh--432vCz-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="was6Y7-AhTUG_-qzvy3q-1" value="start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+          <mxGeometry x="390" y="60" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-1" value="payload = consumeFromKafa()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317.5" y="130" width="245" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-2" value="customer = db.MCustomer.query(x =&amp;gt;&lt;div&gt;x.CustomerCode = payload.Customer.CustomerCode &amp;amp;&amp;amp;&lt;/div&gt;&lt;div&gt;x.Bucode = payload.Bu.Bucode)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="274.38" y="200" width="331.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-3" target="W4SQOHc0aTlh--432vCz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-3" target="W4SQOHc0aTlh--432vCz-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-3" value="customer is not null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300.01" y="300" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-4" value="customerForUpdate = MappingDataForUpdate(payload)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="562.5" y="390" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-6" target="W4SQOHc0aTlh--432vCz-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-6" value="customerForInsert = MappingDataForInsert(payload)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="7.5" y="390" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-12" value="T" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580.01" y="310" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-13" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="308" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-14" target="W4SQOHc0aTlh--432vCz-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-14" value="customerAddress = db.MCustomerAddress.query(x =&amp;gt;&lt;div&gt;x.id = customer.MCustomerAddressId)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="595.01" y="560" width="314.99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-15" target="W4SQOHc0aTlh--432vCz-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-15" value="customer.MCustomerAddressId has value" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285.01" y="470" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-16" value="T" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575.63" y="470" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-17" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="395" y="550" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-18" value="customerAddressForUpdate = MappingCustomerAddressForUpdate(payload, customerAddress)&lt;div&gt;customerAddressAffected = db.MCustomerAddress.Update(customerAddressForUpdate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="595.01" y="760" width="544.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-19" target="W4SQOHc0aTlh--432vCz-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-19" value="customerAddress is not null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285.01" y="670" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-20" target="W4SQOHc0aTlh--432vCz-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-20" value="customerAddressForCreate = MappingCustomerAddressForCreate(payload)&lt;div&gt;customerAddressAffected = db.MCustomerAddress.Insert(customerAddressForCreate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="760" width="509.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-24" value="T" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="668" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-25" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="270.01" y="668" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.415;entryY=-0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-19" target="W4SQOHc0aTlh--432vCz-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-28" target="W4SQOHc0aTlh--432vCz-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-28" value="customer.SetAddress(customerAddressAffected)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="282.53" y="890" width="312.48" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-31" target="W4SQOHc0aTlh--432vCz-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-31" value="order = db.DOrder.query(x =&amp;gt;&lt;div&gt;x.OrderNumber = payload.OrderNumber &amp;amp;&amp;amp;&lt;/div&gt;&lt;div&gt;x.BuCode = payload.bu.buCode)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270.03999999999996" y="970" width="337.47" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-32" target="W4SQOHc0aTlh--432vCz-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-32" target="W4SQOHc0aTlh--432vCz-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-32" value="order is not null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285.01" y="1100" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-33" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderForUpdate = MappingOrderForUpdate(payload, order)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderAffected =&amp;nbsp;&lt;/span&gt;db.DOrder.update(orderForUpdate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580.01" y="1200" width="379.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-34" target="W4SQOHc0aTlh--432vCz-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-34" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderForInsert = MappingOrderForInsert(payload)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;orderAffected = db.DOrder.update(orderForInsert)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-79.98" y="1200" width="379.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-35" value="T" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="585" y="1098" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-36" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="265" y="1098" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-37" target="W4SQOHc0aTlh--432vCz-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-37" target="W4SQOHc0aTlh--432vCz-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-37" value="order3pl is not null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285.01" y="1450" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="438.8571428571431" y="1440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-38" value="order3pl = db.DOrder3Pl.query(x =&amp;gt;&lt;div&gt;x.DOrderId = orderAffected.Id&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270.01" y="1320" width="337.47" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-39" target="W4SQOHc0aTlh--432vCz-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-39" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;order3plForUpdate = MappingOrderForUpdate(payload, order3pl)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;order3plAffected =&amp;nbsp;&lt;/span&gt;db.DOrder3Pl.update(order3plForUpdate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580.01" y="1560" width="379.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-41" target="W4SQOHc0aTlh--432vCz-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-41" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;order3plForCreate = MappingOrderForCreate(payload, orderAffected)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;order3plAffected =&amp;nbsp;&lt;/span&gt;db.DOrder3Pl.insert(order3plForCreate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-62.489999999999995" y="1560" width="379.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-42" value="T" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="1438" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-43" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1438" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440.2857142857142" y="1830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-51" value="orderProduct = db.DOrderProduct.query(x =&amp;gt;&lt;div&gt;x.DOrderId = orderAffected.Id &amp;amp;&amp;amp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;x.ProductCode = payload.Product.Code &amp;amp;&amp;amp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;x.ProductSku = payload.Product.skuCode &amp;amp;&amp;amp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;x.ProductBarcode = payload.Product.Barcode)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="233.77999999999997" y="1680" width="412.47" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-52" target="W4SQOHc0aTlh--432vCz-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-52" target="W4SQOHc0aTlh--432vCz-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-52" value="orderProduct is not null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="285.01" y="1840" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="2070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-53" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderProductForUpdate = MappingOrderProductForUpdate(payload, orderProduct)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderProductAffected =&amp;nbsp;&lt;/span&gt;db.DOrderProduct.update(orderProductForUpdate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580.01" y="1950" width="479.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-54" target="W4SQOHc0aTlh--432vCz-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-54" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderProductForInsert = MappingOrderProductForInsert(payload)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderProductAffected =&amp;nbsp;&lt;/span&gt;db.DOrderProduct.insert(orderProductForInsert)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="1950" width="479.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-55" value="T" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="1828" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-56" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1828" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-62">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="439.0588235294117" y="2180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-62" value="orderSubProduct = db.DOrderSubProduct.query(x =&amp;gt;&lt;div&gt;x.DOrderProductId = orderProductAffected.Id&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="253.74" y="2070" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-63" target="W4SQOHc0aTlh--432vCz-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-63" target="W4SQOHc0aTlh--432vCz-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-63" value="orderSubProduct&amp;nbsp;is not null" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="283.74" y="2190" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="2410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-64" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderSubProductForUpdate = MappingOrderSubProductForUpdate(payload, orderSubProduct)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderSubProductAffected =&amp;nbsp;&lt;/span&gt;db.DOrderSubProduct.update(orderSubProductForUpdate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580.01" y="2290" width="519.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-66" target="W4SQOHc0aTlh--432vCz-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-66" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderSubProductForCreate = MappingOrderSubProductForCreate(payload)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orderSubProductAffected =&amp;nbsp;&lt;/span&gt;db.DOrderSubProduct.insert(orderSubProductForCreate)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-202.49" y="2290" width="519.99" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-70" value="T" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="2188" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-71" value="F" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="275" y="2188" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="W4SQOHc0aTlh--432vCz-74" target="W4SQOHc0aTlh--432vCz-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-74" value="customerPayload = prepareCustomerPayload()&lt;div&gt;sendEvent(customerPayload)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="297.52" y="2410" width="284.99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-78" value="end" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+          <mxGeometry x="388.74" y="2480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-84" value="&lt;div style=&quot;background-color: rgb(31, 31, 31); line-height: 19px; color: rgb(204, 204, 204);&quot;&gt;&lt;font face=&quot;Consolas, Courier New, monospace&quot; color=&quot;#cccccc&quot;&gt;&lt;span style=&quot;font-size: 14px; white-space: pre;&quot;&gt;{&lt;br/&gt;    &quot;ReferenceNo&quot;: &quot;CDS320250206088860-0239225&quot;,&lt;br/&gt;    &quot;OrderNumber&quot;: &quot;CDS3P2502-000052&quot;,&lt;br/&gt;    &quot;TrackingNo&quot;: &quot;DHL0202502000003&quot;,&lt;br/&gt;    &quot;RequestDate&quot;: &quot;2025-02-05T17:00:00.000Z&quot;,&lt;br/&gt;    &quot;Remark&quot;: &quot;&quot;,&lt;br/&gt;    &quot;TaxNumber&quot;: null,&lt;br/&gt;    &quot;ShippingType&quot;: &quot;Online&quot;,&lt;br/&gt;    &quot;OrderType&quot;: &quot;Storepick&quot;,&lt;br/&gt;    &quot;ServiceLevel&quot;: &quot;Standard&quot;,&lt;br/&gt;    &quot;ServiceType&quot;: &quot;Home Delivery&quot;,&lt;br/&gt;    &quot;OrderId&quot;: &quot;CDS320250206088860&quot;,&lt;br/&gt;    &quot;ShipmentId&quot;: &quot;CDS3202502060888601&quot;,&lt;br/&gt;    &quot;DeliveryType&quot;: &quot;0001&quot;,&lt;br/&gt;    &quot;DeliverySubType&quot;: &quot;0003&quot;,&lt;br/&gt;    &quot;FulfillLoc&quot;: &quot;10142&quot;,&lt;br/&gt;    &quot;CarrierName&quot;: &quot;Fareye&quot;,&lt;br/&gt;    &quot;FulfilmentID&quot;: &quot;0239225&quot;,&lt;br/&gt;    &quot;MerchantID&quot;: null,&lt;br/&gt;    &quot;CustomerID&quot;: null,&lt;br/&gt;    &quot;PickupInstruction&quot;: &quot;&quot;,&lt;br/&gt;    &quot;FulfillBU&quot;: &quot;CDS&quot;,&lt;br/&gt;    &quot;Organization&quot;: &quot;DS-UAT&quot;,&lt;br/&gt;    &quot;IsInvalidStruckChecker&quot;: false,&lt;br/&gt;    &quot;Customer&quot;: {&lt;br/&gt;        &quot;Company&quot;: &quot;&quot;,&lt;br/&gt;        &quot;CustomerCode&quot;: &quot;L250000023&quot;,&lt;br/&gt;        &quot;FirstName&quot;: &quot;sulasit&quot;,&lt;br/&gt;        &quot;LastName&quot;: &quot;k&quot;,&lt;br/&gt;        &quot;Email&quot;: &quot;dummyemail_0zajl2vh_sulasitkongsip@xyz.com&quot;,&lt;br/&gt;        &quot;Mobile&quot;: &quot;0622623163&quot;,&lt;br/&gt;        &quot;Tel&quot;: null,&lt;br/&gt;        &quot;Address&quot;: {&lt;br/&gt;            &quot;HouseNumber&quot;: &quot;&quot;,&lt;br/&gt;            &quot;Village&quot;: &quot;92&quot;,&lt;br/&gt;            &quot;Moo&quot;: &quot;&quot;,&lt;br/&gt;            &quot;Soi&quot;: &quot;&quot;,&lt;br/&gt;            &quot;Road&quot;: &quot;&quot;,&lt;br/&gt;            &quot;SubDistrictName&quot;: &quot;ในเมือง&quot;,&lt;br/&gt;            &quot;DistrictName&quot;: &quot;เมืองขอนแก่น&quot;,&lt;br/&gt;            &quot;ProvinceName&quot;: &quot;ขอนแก่น&quot;,&lt;br/&gt;            &quot;ZipCode&quot;: &quot;40000&quot;,&lt;br/&gt;            &quot;CountryCode&quot;: &quot;TH&quot;,&lt;br/&gt;            &quot;Tel&quot;: &quot;0622623163&quot;,&lt;br/&gt;            &quot;RoomNumber&quot;: null,&lt;br/&gt;            &quot;FloorNumber&quot;: null,&lt;br/&gt;            &quot;ProvinceCode&quot;: null,&lt;br/&gt;            &quot;Coordination&quot;: {&lt;br/&gt;                &quot;Latitude&quot;: &quot;16.4321921&quot;,&lt;br/&gt;                &quot;Longitude&quot;: &quot;102.8236093&quot;&lt;br/&gt;            }&lt;br/&gt;        }&lt;br/&gt;    },&lt;br/&gt;    &quot;AWB&quot;: {&lt;br/&gt;        &quot;Url&quot;: &quot;https://cgtms-sit.central.co.th/utility/api/awb/6e32cdd5-4ca5-42e7-a5c7-fef446346816.pdf/?d=awbFile_CDS320250206088860-0239225_DHL0202502000003&quot;,&lt;br/&gt;        &quot;Name&quot;: &quot;6e32cdd5-4ca5-42e7-a5c7-fef446346816&quot;&lt;br/&gt;    },&lt;br/&gt;    &quot;Place&quot;: {&lt;br/&gt;        &quot;Code&quot;: &quot;P3PL001&quot;,&lt;br/&gt;        &quot;Code2Digit&quot;: &quot;3P&quot;,&lt;br/&gt;        &quot;MechandiseCode&quot;: &quot;99999&quot;&lt;br/&gt;    },&lt;br/&gt;    &quot;Package&quot;: {&lt;br/&gt;        &quot;TotalPrice&quot;: 2950.0,&lt;br/&gt;        &quot;IsCod&quot;: 0,&lt;br/&gt;        &quot;CodAmount&quot;: 0.0,&lt;br/&gt;        &quot;Weight&quot;: 1.00,&lt;br/&gt;        &quot;Width&quot;: 21.5,&lt;br/&gt;        &quot;Height&quot;: 7.5,&lt;br/&gt;        &quot;Length&quot;: 14.5,&lt;br/&gt;        &quot;Insured&quot;: 1,&lt;br/&gt;        &quot;InsuredAmount&quot;: 0.0,&lt;br/&gt;        &quot;Size&quot;: 0.00,&lt;br/&gt;        &quot;DimWeight&quot;: 0.00&lt;br/&gt;    },&lt;br/&gt;    &quot;Product&quot;: {&lt;br/&gt;        &quot;Code&quot;: &quot;P0000000&quot;,&lt;br/&gt;        &quot;SkuCode&quot;: &quot;000999999&quot;,&lt;br/&gt;        &quot;BarCode&quot;: &quot;8000009999999&quot;,&lt;br/&gt;        &quot;Name&quot;: &quot;3PL Product Dummy&quot;&lt;br/&gt;    },&lt;br/&gt;    &quot;Sender&quot;: {&lt;br/&gt;        &quot;FirstName&quot;: &quot;เซ็นทรัล เอ็มบาสซี่&quot;,&lt;br/&gt;        &quot;LastName&quot;: &quot;0621958177&quot;,&lt;br/&gt;        &quot;Tel&quot;: &quot;0621958177&quot;,&lt;br/&gt;        &quot;Company&quot;: &quot;&quot;,&lt;br/&gt;        &quot;Email&quot;: &quot;customerservice@central.co.th&quot;,&lt;br/&gt;        &quot;Address1&quot;: &quot;เลขที่ 1031 ถนนเพลินจิต&quot;,&lt;br/&gt;        &quot;Address2&quot;: &quot;&quot;,&lt;br/&gt;        &quot;Address&quot;: {&lt;br/&gt;            &quot;HouseNumber&quot;: null,&lt;br/&gt;            &quot;Village&quot;: null,&lt;br/&gt;            &quot;Moo&quot;: null,&lt;br/&gt;            &quot;Soi&quot;: null,&lt;br/&gt;            &quot;Road&quot;: null,&lt;br/&gt;            &quot;SubDistrictName&quot;: &quot;ลุมพินี &quot;,&lt;br/&gt;            &quot;DistrictName&quot;: &quot;ปทุมวัน&quot;,&lt;br/&gt;            &quot;ProvinceName&quot;: &quot;กรุงเทพมหานคร&quot;,&lt;br/&gt;            &quot;ZipCode&quot;: &quot;10330&quot;,&lt;br/&gt;            &quot;CountryCode&quot;: &quot;TH&quot;,&lt;br/&gt;            &quot;Tel&quot;: &quot;0621958177&quot;,&lt;br/&gt;            &quot;RoomNumber&quot;: null,&lt;br/&gt;            &quot;FloorNumber&quot;: null,&lt;br/&gt;            &quot;ProvinceCode&quot;: null,&lt;br/&gt;            &quot;Coordination&quot;: {&lt;br/&gt;                &quot;Latitude&quot;: &quot;13.7437&quot;,&lt;br/&gt;                &quot;Longitude&quot;: &quot;100.5466&quot;&lt;br/&gt;            }&lt;br/&gt;        }&lt;br/&gt;    },&lt;br/&gt;    &quot;Tracking&quot;: {&lt;br/&gt;        &quot;IsUsed&quot;: null,&lt;br/&gt;        &quot;IsValid&quot;: null,&lt;br/&gt;        &quot;CantGenerate&quot;: false,&lt;br/&gt;        &quot;CheckTrackingMessage&quot;: null,&lt;br/&gt;        &quot;GenerateTrackingMessage&quot;: null&lt;br/&gt;    },&lt;br/&gt;    &quot;DynamicSelection&quot;: {&lt;br/&gt;        &quot;VendorCarrierName&quot;: &quot;DHL&quot;,&lt;br/&gt;        &quot;DeliveryPromise&quot;: 2,&lt;br/&gt;        &quot;IsInvalid&quot;: false,&lt;br/&gt;        &quot;FailureMessage&quot;: null&lt;br/&gt;    },&lt;br/&gt;    &quot;Bu&quot;: {&lt;br/&gt;        &quot;BuCode&quot;: &quot;CDS&quot;,&lt;br/&gt;        &quot;HasBuCode&quot;: true,&lt;br/&gt;        &quot;ShortName&quot;: &quot;CENTRAL&quot;&lt;br/&gt;    },&lt;br/&gt;    &quot;ServiceTypeValidation&quot;: {&lt;br/&gt;        &quot;NameLocal&quot;: &quot;Home Delivery&quot;,&lt;br/&gt;        &quot;NameEN&quot;: &quot;Home Delivery&quot;,&lt;br/&gt;        &quot;ServiceTypeCode&quot;: &quot;0001&quot;,&lt;br/&gt;        &quot;FailureMessage&quot;: null,&lt;br/&gt;        &quot;IsInvalid&quot;: false&lt;br/&gt;    },&lt;br/&gt;    &quot;Publisher&quot;: &quot;tms-portal&quot;,&lt;br/&gt;    &quot;SagaId&quot;: &quot;ca39a452c8bd8fd30c76f9b51f892244&quot;,&lt;br/&gt;    &quot;Environment&quot;: &quot;Sit&quot;,&lt;br/&gt;    &quot;EventName&quot;: &quot;Order3PLCreatedEvent&quot;,&lt;br/&gt;    &quot;DomainStatus&quot;: &quot;CREATING&quot;,&lt;br/&gt;    &quot;ProviderCode&quot;: &quot;3PLP&quot;,&lt;br/&gt;    &quot;Username&quot;: &quot;TMSSystem&quot;,&lt;br/&gt;    &quot;FailureMessages&quot;: [],&lt;br/&gt;    &quot;Id&quot;: &quot;1b339512-be1c-40c3-aa1d-28b88af8df6b&quot;,&lt;br/&gt;    &quot;CreationDate&quot;: &quot;2025-02-06T07:32:39.563832Z&quot;&lt;br/&gt;}&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-1670" y="1520" width="1200" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="W4SQOHc0aTlh--432vCz-85" value="&lt;font style=&quot;font-size: 50px;&quot;&gt;Input Event from Kafka&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1310" y="50" width="530" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
