@@ -51,5 +51,6 @@ erDiagram
         string(255) PackageDescription
         string(timespan) PickupStartTime
         string(timespan) PickupEndTime
+        string(50) OrderNo
     }
 ```
