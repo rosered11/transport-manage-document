@@ -1,0 +1,123 @@
+FORMAT: 1A
+HOST: http://localhost
+
+# Delivery to 3PL
+
+## Group 3PL Api
+
+### Submit data to 3PL provider [/3pl/api/delivery/submit]
+
+#### Submit [POST]
+
+**Process Instruction**
+- Prepare data follow payload of 3PL
+- Send payload to 3PL 
+- Compute result from response of 3PL, do I need to create an AWB?
+- Insert log and result to database
+- Prepare response of result and data to create shipment from 3PL
+
+**Question**
+- I need to final logic for generate AWB
+- I need user journey, In case If the API responds with the flag that the awb could not be created. How to repair AWB in this case.
+- I can use the result for handler generate AWB that it is the core process for all 3PL?
+
++ Attributes (Shipment Request Base)
+
++ Request (application/json)
+
+    + Headers
+
+        Authorization: Bearer {access-token}
+
++ Response 200
+    + Attributes (Response Base)
+
++ Response 500 (application/json)
+    + Attributes (InternalError Base)
+
+# Data Structures
+
+## Shipment Request Base (object)
++ carrierCode3Digit: KER (string)
++ shipment (Shipment Detail Base)
+
+## Response Base (object)
++ status: 0 (number)
++ statusText: OK (string)
++ sprintRequestID: traceId (string)
++ shipmentUpdate (Shipment Response Base)
+
+## Shipment Response Base (object)
++ result: OK (string)
++ data01: data01 (string)
++ data02: data02 (string)
++ data03: data03 (string)
++ data04: data04 (string)
++ carrierReferenceNo: crefno (string)
++ carrierSortingNo: csn (string)
++ carrierStreetSortingNo: cssn (string)
++ carrierDepotNo: cdn (string)
++ carrierTrackingUrl: ctu (string)
+
+## Shipment Detail Base (object)
++ m3Plid: 1 (number)
++ mOrderTypeId: 1 (number)
++ trackingNo: abc (string)
++ senderFirstName: first (string)
++ senderLastName: last (string)
++ senderAddress1: add1 (string)
++ senderAddress2: add2 (string)
++ senderSubdistrict: subDistrict (string)
++ senderDistrict: district (string)
++ senderProvince: province (string)
++ senderZipCode: 1111 (string)
++ senderPhoneNumber1: 0xxxx (string)
++ senderPhoneNumber2: 0xxxx (string)
++ senderEmail: email (string)
++ senderCompany: company (string)
++ senderLatitude: latitude (string)
++ senderLongitude: longtitude (string)
++ receiverFirstName: firstname (string)
++ receiverLastName: lastname (string)
++ receiverAddress1: recAddress1 (string)
++ receiverAddress2: recAddress2 (string)
++ receiverSubdistrict: recSubdist (string)
++ receiverDistrict: recDest (string)
++ receiverProvince: recProv (string)
++ receiverZipCode: recZip (string)
++ receiverPhoneNumber1: recPhon1 (string)
++ receiverPhoneNumber2: recPhon2 (string)
++ receiverEmail: email (string)
++ receiverCompany: company (string)
++ receiverLatitude: lat (string)
++ receiverLongitude: long (string)
++ isInsurance: 1 (number)
++ packageValue: 1.12 (number)
++ numberBoxes: 1 (number)
++ referenceNo: refno (string)
++ isCod: 1 (number)
++ pickupDate: `2025-02-20` (string)
++ codAmount: 1.12 (number)
++ serviceType: st (string)
++ weight: 1.12 (number)
++ width: 1.12 (number)
++ length: 1.12 (number)
++ height: 1.12 (number)
++ deliveryInstructions: detail (string)
++ isRequireSms: 1 (number)
++ packageName: pn (string)
++ packageDescription: pd (string)
++ pickupStartTime: `23:59:59` (string)
++ pickupEndTime: `23:59:59` (string)
++ orderNo: orderNo (string)
+
+## InternalError Base (object)
++ status: 500 (string)
+
+    HttpStatusCode
+
++ statusText: Null Referenece Exception (string)
+
+    A exception message.
+
++ sprintRequestID: traceId (string)
