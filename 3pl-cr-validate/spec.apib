@@ -5,14 +5,14 @@ HOST: http://localhost
 
 ## Group 3PL Api
 
-### Submit data to 3PL provider [/3pl/api/delivery/submit]
+### Submit data to 3PL provider [/3pl/api/delivery/submission]
 
 #### Submit [POST]
 
 **Process Instruction**
 - Prepare data follow payload of 3PL
 - Send payload to 3PL 
-- Compute result from response of 3PL, do I need to create an AWB?
+- Compute result from response of 3PL
 - Insert log and result to database
 - Prepare response of result and data to create shipment from 3PL
 
@@ -28,6 +28,7 @@ HOST: http://localhost
     + Headers
 
         Authorization: Bearer {access-token}
+        X-Sprint-Access: {x-sprint-access}
 
 + Response 200
     + Attributes (Response Base)
@@ -38,17 +39,16 @@ HOST: http://localhost
 # Data Structures
 
 ## Shipment Request Base (object)
-+ carrierCode3Digit: KER (string)
 + shipment (Shipment Detail Base)
 
 ## Response Base (object)
 + status: 0 (number)
-+ statusText: OK (string)
-+ sprintRequestID: traceId (string)
++ statusText: `null` (string, optional)
++ sprintRequestID: `d8e34568-000d-44b4-9c73-fe6c8121c93d` (string)
 + shipmentUpdate (Shipment Response Base)
 
 ## Shipment Response Base (object)
-+ result: OK (string)
++ result: OK (string) - A field use for decide to show tracking url on response
 + data01: data01 (string)
 + data02: data02 (string)
 + data03: data03 (string)
@@ -104,12 +104,12 @@ HOST: http://localhost
 + length: 1.12 (number)
 + height: 1.12 (number)
 + deliveryInstructions: detail (string)
-+ isRequireSms: 1 (number)
 + packageName: pn (string)
 + packageDescription: pd (string)
 + pickupStartTime: `23:59:59` (string)
 + pickupEndTime: `23:59:59` (string)
 + orderNo: orderNo (string)
++ buCode: buCode (string)
 
 ## InternalError Base (object)
 + status: 500 (string)
@@ -120,4 +120,4 @@ HOST: http://localhost
 
     A exception message.
 
-+ sprintRequestID: traceId (string)
++ sprintRequestID: `d8e34568-000d-44b4-9c73-fe6c8121c93d` (string)
